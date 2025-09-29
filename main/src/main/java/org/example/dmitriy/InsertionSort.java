@@ -1,7 +1,10 @@
 package org.example.dmitriy;
 
-public class InsertionSort {
-    public static void sort(int[] array) {
+import org.example.Sorter;
+
+public class InsertionSort implements Sorter {
+    @Override
+    public void sort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int k = array[i];
             int j = i - 1;

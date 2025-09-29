@@ -9,7 +9,10 @@ public class Main {
         int[] test = {1, 4, 5, 2};
 
         System.out.println(Arrays.toString(test));
-        InsertionSort.sort(test);
+
+        Sorter sorter = new InsertionSort();
+        sorter.sort(test);
+
         System.out.println(Arrays.toString(test));
     }
 }
