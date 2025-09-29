@@ -1,10 +1,14 @@
-package org.example.dmitriy;
+package org.example.dmitriy.insertion;
 
 import org.example.Sorter;
 
 public class InsertionSort implements Sorter {
     @Override
     public void sort(int[] array) {
+        if (array.length <= 1) {
+            return;
+        }
+
         for (int i = 0; i < array.length; i++) {
             int k = array[i];
             int j = i - 1;
