@@ -1,6 +1,7 @@
 package org.example;
 
-import org.example.dmitriy.InsertionSort;
+import org.example.dmitriy.shell.GapSequence;
+import org.example.dmitriy.shell.ShellSort;
 
 import java.util.Arrays;
 
@@ -10,7 +11,7 @@ public class Main {
 
         System.out.println(Arrays.toString(test));
 
-        Sorter sorter = new InsertionSort();
+        Sorter sorter = new ShellSort(GapSequence.SEDGEWICK);
         sorter.sort(test);
 
         System.out.println(Arrays.toString(test));
